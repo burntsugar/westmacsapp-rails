@@ -1,0 +1,21 @@
+  <%= form_with(model: [ @trail_site, @trail_site.observations.build ], local: true) do |form| %>
+
+    <p>
+    <strong>Title:</strong>
+    <%= @trail_site.id %>
+  </p>
+
+    <p>
+      <%= form.label :author_name %><br>
+      <%= form.text_field :author_name %>
+    </p>
+    <p>
+      <%= form.label :note %><br>
+      <%= form.text_field :note %>
+    </p>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+   
+  <% end %>

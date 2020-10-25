@@ -1,0 +1,27 @@
+<h1>Listing Observations</h1>
+ 
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Author name</th>
+    <th>Note</th>
+    <th>Log date</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+  <% @observations.each do |observation| %>
+    <tr>
+      <td><%= observation.id %></td>
+      <td><%= observation.author_name %></td>
+      <td><%= observation.note %></td>
+      </td>
+      <td><%= observation.log_date %></td>
+      <td><%= link_to 'Show', observation_path(observation) %></td>
+      <td><%= link_to 'Edit', edit_observation_path(observation) %></td>
+      <td><%= link_to 'Destroy', observation_path(observation),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+

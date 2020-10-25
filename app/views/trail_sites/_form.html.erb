@@ -1,0 +1,41 @@
+<%= form_with scope: :trail_site, url: trail_sites_path, local: true do |form| %>
+ 
+    <% if @trail_site.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@trail_site.errors.count, "error") %> prohibited
+          this trail_site from being saved:
+        </h2>
+        <ul>
+          <% @trail_site.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+   
+    <p>
+      <%= form.label :id %><br>
+      <%= form.text_field :id, readonly: true %>
+    </p>
+   
+    <p>
+      <%= form.label :is_trail_head %><br>
+      <%= form.text_area :is_trail_head %>
+    </p>
+
+    <p>
+        <%= form.label :section_number %><br>
+        <%= form.text_area :section_number %>
+    </p>
+
+    <p>
+        <%= form.label :distance_from_trail_start %><br>
+        <%= form.text_area :distance_from_trail_start %>
+    </p>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+   
+  <% end %>

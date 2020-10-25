@@ -1,0 +1,34 @@
+<h1> TRAIL SITE show</h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @trail_site.id %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.is_trail_head %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.section_number %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.distance_from_trail_start %>
+</p>
+
+<h2>Observations</h2>
+<%= render @trail_site.observations %>
+
+<h2>Add an observation:</h2>
+<%= render 'observations/form' %>
+
+ 
+<%= link_to 'Edit', edit_trail_site_path(@trail_site) %> |
+<%= link_to 'Back', trail_sites_path %>
+
+
+ 

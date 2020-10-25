@@ -1,0 +1,29 @@
+<h1>TrailSites#index</h1>
+
+<h1>Listing Trail Sites</h1>
+ 
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Is trail head?</th>
+    <th>Section number</th>
+    <th>Distance from trail start</th>
+    <th colspan="4"></th>
+  </tr>
+ 
+  <% @trail_sites.each do |trail_site| %>
+    <tr>
+      <td><%= trail_site.id %></td>
+      <td><%= trail_site.is_trail_head %></td>
+      <td><%= trail_site.section_number %></td>
+      </td>
+      <td><%= trail_site.distance_from_trail_start %></td>
+      <td><%= link_to 'Show', trail_site_path(trail_site) %></td>
+      <td><%= link_to 'Edit', edit_trail_site_path(trail_site) %></td>
+      <td><%= link_to 'Destroy', trail_sites_path(trail_site),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
