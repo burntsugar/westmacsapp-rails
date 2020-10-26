@@ -1,2 +1,2 @@
-module TrailSitesHelper
+module TrailSitesHelper  
 end
