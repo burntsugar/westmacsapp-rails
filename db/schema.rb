@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_25_010205) do
+ActiveRecord::Schema.define(version: 2020_10_26_001929) do
 
   create_table "facilities", force: :cascade do |t|
     t.integer "name_type"
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(version: 2020_10_25_010205) do
   end
 
   create_table "trail_sites", force: :cascade do |t|
-    t.boolean "is_trail_head"
-    t.integer "section_number"
-    t.float "distance_from_trail_start"
+    t.boolean "is_trail_head", default: false, null: false
+    t.integer "section_number", null: false
+    t.float "distance_from_trail_start", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
