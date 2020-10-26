@@ -20,6 +20,31 @@
   <%= @trail_site.distance_from_trail_start %>
 </p>
 
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.description %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.latitude %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.longitude %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @trail_site.elevation %>
+</p>
+
 <h2>Observations</h2>
 <%= render @trail_site.observations %>
 
