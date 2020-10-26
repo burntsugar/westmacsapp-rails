@@ -6,10 +6,20 @@ class TrailSitesController < ApplicationController
 
   def new
     @trail_site = TrailSite.new
+    format_optionals
   end 
 
+  def format_optionals
+    if @trail_site.elevation == 0 || @trail_site.elevation == nil
+      @trail_site.elevation = ''
+    end
+    # TODO: is_trail_head
+    # TODO: latitude
+    # TODO: longitude
+  end
+
   def create
-    @trail_site = TrailSite.new(article_params)
+    @trail_site = TrailSite.new(trail_site_params)
 
     if @trail_site.save
       redirect_to @trail_site
@@ -34,9 +44,9 @@ class TrailSitesController < ApplicationController
   end 
 
   private
-  def article_params
+  def trail_site_params
       # The white list.
-      params.require(:trail_site).permit(:is_trail_head,:section_number,:distance_from_trail_start)
+      params.require(:trail_site).permit(:is_trail_head,:section_number,:distance_from_trail_start, :name, :description, :latitude, :longitude, :elevation)
   end
 
 end
