@@ -5,6 +5,7 @@ class TrailSite < ApplicationRecord
 
     # is_trail_head : boolean
     validates_inclusion_of :is_trail_head, presence: true, in: [true, false]
+    # section number
     validates :section_number, presence: true, numericality: { greater_than: 0, less_than_or_equal_to: Rails.configuration.custom_trail.num_of_sections }
     # distance_from_trail_start
     validates :distance_from_trail_start, presence: true, numericality: { greater_than: 0 }

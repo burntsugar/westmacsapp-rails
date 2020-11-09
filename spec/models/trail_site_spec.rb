@@ -1,7 +1,5 @@
 require 'rails_helper'
 
-
-
 RSpec.describe TrailSite, :type => :model do
 
   before(:each) do
@@ -26,8 +24,13 @@ RSpec.describe TrailSite, :type => :model do
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
+  it "is not valid without a section number" do
+    @h_master.delete(:section_number)
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
   it "is not valid without a valid section number" do
-    @h_master[:section_number]=-10
+    @h_master[:section_number]=Rails.configuration.custom_trail.num_of_sections + 1
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
