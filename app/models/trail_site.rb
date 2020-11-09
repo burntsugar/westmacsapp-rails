@@ -8,7 +8,7 @@ class TrailSite < ApplicationRecord
     # section number
     validates :section_number, presence: true, numericality: { greater_than: 0, less_than_or_equal_to: Rails.configuration.custom_trail.num_of_sections }
     # distance_from_trail_start
-    validates :distance_from_trail_start, presence: true, numericality: { greater_than: 0 }
+    validates :distance_from_trail_start, presence: true, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: Rails.configuration.custom_trail.max_distance_from_trail_start }
     # name
     validates :name, presence: true, length: {minimum: 1} 
     # description
