@@ -12,7 +12,7 @@ class TrailSite < ApplicationRecord
     # name
     validates :name, presence: true, length: {minimum: 1} 
     # description
-    validates :description, presence: true, length: {minimum: 1}
+    validates :description, presence: true, length: {minimum: 1, maximum: 255}
     # latitude
     validates :latitude, numericality: { only_float: true, :greater_than_or_equal_to => 0, allow_nil: true}
     # longitude

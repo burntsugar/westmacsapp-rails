@@ -59,6 +59,16 @@ RSpec.describe TrailSite, :type => :model do
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
+  it "is not valid with a zero length description" do
+    @h_master[:description]=""
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
+  it "is not valid with description length >= 256" do
+    @h_master[:description]="B"*256
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
   it "is not valid without a start_date"
   it "is not valid without a end_date"
 end
