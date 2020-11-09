@@ -29,7 +29,12 @@ RSpec.describe TrailSite, :type => :model do
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
-  it "is not valid without a valid section number" do
+  it "is not valid without a positive section number" do
+    @h_master[:section_number]=-10
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
+  it "is not valid without a section number in the correct range" do
     @h_master[:section_number]=Rails.configuration.custom_trail.num_of_sections + 1
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
