@@ -10,7 +10,7 @@ RSpec.describe TrailSite, :type => :model do
       description: "xxx",
       latitude: Rails.configuration.custom_trail.bbox_max_lat,
       longitude: Rails.configuration.custom_trail.bbox_max_lng,
-      elevation: 1}
+      elevation: Rails.configuration.custom_trail.max_elevation}
       puts @h_master
       @h_master
   end
@@ -86,6 +86,16 @@ RSpec.describe TrailSite, :type => :model do
   end
   it "is not valid with longitude exceeding max" do
     @h_master[:longitude]=Rails.configuration.custom_trail.bbox_min_lng - 1
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
+  it "is not valid with elevation exceeding max" do
+    @h_master[:elevation]=Rails.configuration.custom_trail.max_elevation + 1
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
+  it "is not valid with elevation less than min" do
+    @h_master[:elevation]=Rails.configuration.custom_trail.min_elevation - 1
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
