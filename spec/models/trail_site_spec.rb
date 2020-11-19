@@ -8,7 +8,7 @@ RSpec.describe TrailSite, :type => :model do
       distance_from_trail_start: Rails.configuration.custom_trail.max_distance_from_trail_start,
       name: "xxx",
       description: "xxx",
-      latitude: 1,
+      latitude: Rails.configuration.custom_trail.max_lat_north,
       longitude: 1,
       elevation: 1}
       puts @h_master
@@ -69,11 +69,12 @@ RSpec.describe TrailSite, :type => :model do
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
-  it "is not valid with latitude" do
-    @h_master[:latitude]=2.3
+  it "is not valid with excess latitude north" do
+    @h_master[:latitude]=Rails.configuration.custom_trail.max_lat_north + 1
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
+
   it "is not valid without a start_date"
   it "is not valid without a end_date"
 end

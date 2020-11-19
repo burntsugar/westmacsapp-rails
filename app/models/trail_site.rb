@@ -14,7 +14,7 @@ class TrailSite < ApplicationRecord
     # description
     validates :description, presence: true, length: {minimum: 1, maximum: 255}
     # latitude
-    validates :latitude, numericality: { only_float: true, allow_nil: true}
+    validates :latitude, numericality: { only_float: true, allow_nil: true, less_than_or_equal_to: Rails.configuration.custom_trail.max_lat_north}
     # longitude
     validates :longitude, numericality: { only_float: true, allow_nil: true}
     # elevation

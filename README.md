@@ -23,5 +23,9 @@ shared:
    max_distance_from_trail_start: 235
 ````
 
+## Run all tests
+
+`bundle exec rspec`
+
 
 

@@ -1,3 +1,7 @@
 shared:
    num_of_sections: 12
    max_distance_from_trail_start: 235
+   max_lat_north: -23.30
+   max_lat_south: -23.50
+   max_lng_west: 132.30
+   max_lng_east: 133.54
