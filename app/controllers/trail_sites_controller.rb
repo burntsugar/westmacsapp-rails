@@ -19,6 +19,8 @@ class TrailSitesController < ApplicationController
   end
 
   def create
+    # byebug
+    # logger.debug(trail_site_params)
     @trail_site = TrailSite.new(trail_site_params)
 
     if @trail_site.save
