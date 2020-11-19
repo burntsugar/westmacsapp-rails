@@ -16,7 +16,7 @@ class TrailSite < ApplicationRecord
     # latitude
     validates :latitude, numericality: { only_float: true, allow_nil: true, less_than_or_equal_to: Rails.configuration.custom_trail.bbox_max_lat, greater_than_or_equal_to: Rails.configuration.custom_trail.bbox_min_lat}
     # longitude
-    validates :longitude, numericality: { only_float: true, allow_nil: true}
+    validates :longitude, numericality: { only_float: true, allow_nil: true, less_than_or_equal_to: Rails.configuration.custom_trail.bbox_max_lng, greater_than_or_equal_to: Rails.configuration.custom_trail.bbox_min_lng}
     # elevation
     validates :elevation, numericality: { only_integer: true, :greater_than_or_equal_to => 0, allow_nil: true }
 
