@@ -14,9 +14,9 @@ class TrailSite < ApplicationRecord
     # description
     validates :description, presence: true, length: {minimum: 1, maximum: 255}
     # latitude
-    validates :latitude, numericality: { only_float: true, :greater_than_or_equal_to => 0, allow_nil: true}
+    validates :latitude, numericality: { only_float: true, allow_nil: true}
     # longitude
-    validates :longitude, numericality: { only_float: true, :greater_than_or_equal_to => 0, allow_nil: true}
+    validates :longitude, numericality: { only_float: true, allow_nil: true}
     # elevation
     validates :elevation, numericality: { only_integer: true, :greater_than_or_equal_to => 0, allow_nil: true }
 
