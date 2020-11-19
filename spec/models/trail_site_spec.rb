@@ -54,7 +54,7 @@ RSpec.describe TrailSite, :type => :model do
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
-  it "is not valid without a description" do
+  it "is not valid with a nill description" do
     @h_master[:description]=nil
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
@@ -66,6 +66,11 @@ RSpec.describe TrailSite, :type => :model do
   end
   it "is not valid with description length >= 256" do
     @h_master[:description]="B"*256
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
+  it "is not valid with latitude" do
+    @h_master[:latitude]=2.3
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
