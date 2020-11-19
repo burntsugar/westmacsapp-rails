@@ -5,6 +5,7 @@ shared:
    bbox_min_lat: -23.50
    bbox_min_lng: 132.30
    bbox_max_lng: 133.54
+   max_elevation: 1380.0
    # max_lat_north: -23.30
    # max_lat_south: -23.50
    # max_lng_west: 132.30

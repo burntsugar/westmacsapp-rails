@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_26_061908) do
+ActiveRecord::Schema.define(version: 2020_11_19_015121) do
 
   create_table "facilities", force: :cascade do |t|
     t.integer "name_type"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2020_10_26_061908) do
     t.string "description", default: "", null: false
     t.decimal "latitude", precision: 10, scale: 6, default: "0.0"
     t.decimal "longitude", precision: 10, scale: 6, default: "0.0"
-    t.integer "elevation", default: 0
+    t.decimal "elevation", precision: 6, scale: 2, default: "0.0"
   end
 
 end
