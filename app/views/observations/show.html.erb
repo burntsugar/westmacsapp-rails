@@ -1,2 +1,17 @@
-<h1>Observation#show</h1>
-<p>Find me in app/views/observation/show.html.erb</p>
+<h1>Show Observation</h1>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Observation id: <%= @observation.id %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">TrailSite: <%=@loggable.name%></h6>
+    <p class="card-text">log date: <%= @observation.log_date %></p>
+    <p class="card-text"><%= @observation.note %></p>
+    <%= link_to 'Edit', edit_trail_site_observation_path(@loggable.id,@observation.id),class:"card-link" %>
+     <%=link_to "Cancel", :back, class: "card-link"%>
+  </div>
+</div>
+
+
+
+
+

@@ -1,39 +1,48 @@
 
+# /app/controllers/ObservationsController.rb
 
 class ObservationsController < ApplicationController
+
+  def show
+    @observation = @loggable.observations.find(params[:id])
+  end
+
+  def new
+    @observation = @loggable.observations.new
+  end
+
+  def create
+     @observation = @loggable.observations.new(observation_params)
+     @observation.save
+     redirect_to @loggable
+  end
+
+  def edit
+    @observation = @loggable.observations.find(params[:id])
+  end
+
   def index
     @observations = Observation.all
   end
 
-  def new
-    @observation = Observation.new
-  end
-
-  def edit
-  end
-
   def update
-  end
-
-  def create
-
-    obs = Observation.create(author_name: params[:observation][:author_name],note: params[:observation][:note], log_date: DateTime.now, loggable_id:params[:trail_site_id], loggable_type: "TrailSite")
-    obs.save
-
-    #byebug
-    #logger.debug
-   
-  end
-
-  def show
-    @observation = Observation.new
+    @observation = @loggable.observations.find(params[:id])
+    if @observation.update(observation_params)
+      redirect_to @loggable
+    else
+      render 'edit'
+    end
   end
 
   def destroy
+    @observation = @loggable.observations.find(params[:id])
+    @observation.destroy
+    redirect_to @loggable
   end
 
-  # private
-  # def observation_params
-  #     params.require(:observation).permit(:author_name, :note)
-  # end
+  private
+
+  def observation_params
+      params.require(:observation).permit(:author_name, :note, :trail_site_id, :id)
+  end
 end

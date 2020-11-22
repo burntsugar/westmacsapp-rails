@@ -1,3 +1,4 @@
+<h3>Observation notes</h3>
 
 <div class="table-responsive">
 <table  class="table table-striped table-bordered table-hover">
@@ -6,25 +7,25 @@
     <th scope="col">ID</th>
     <th scope="col">Author name</th>
     <th scope="col">Log date</th>
+    <th scope="col">Note</th>
     <th scope="col">xxx</th>
     <th scope="col">xxx</th>
     <th scope="col">xxx</th>
   </tr>
   </thead>
  
-  <% @trail_site.observations.each do |tso| %>
+  <% loggable.observations.each do |tso| %>
     <tr>
     <td><%= tso.id %></td>
     <td><%= tso.author_name %></td>
     <td><%= tso.log_date %></td>
-    <td><%= link_to 'Show', trail_site_observation_path(tso) %></td>
-      <td><%= link_to 'Edit', edit_trail_site_observation_path(tso) %></td>
-      <td><%= link_to 'Destroy', trail_site_observation_path(tso),
+    <td><%= tso.note %></td>
+    <td><%= link_to 'Show', trail_site_observation_path(trail_site_id,tso.id) %></td>
+      <td><%= link_to 'Edit', edit_trail_site_observation_path(trail_site_id,tso.id) %></td>
+      <td><%= link_to 'Destroy', trail_site_observation_path(trail_site_id,tso.id),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
 </div>
-
-

@@ -9,16 +9,16 @@
     <th colspan="4"></th>
   </tr>
  
-  <% @observations.each do |observation| %>
+  <% @trailsite.observations.each do |tso| %>
     <tr>
-      <td><%= observation.id %></td>
-      <td><%= observation.author_name %></td>
-      <td><%= observation.note %></td>
+      <td><%= tso.id %></td>
+      <td><%= tso.author_name %></td>
+      <td><%= tso.note %></td>
       </td>
-      <td><%= observation.log_date %></td>
-      <td><%= link_to 'Show', observation_path(observation) %></td>
-      <td><%= link_to 'Edit', edit_observation_path(observation) %></td>
-      <td><%= link_to 'Destroy', observation_path(observation),
+      <td><%= tso.log_date %></td>
+      <td><%= link_to 'Show', trail_site_observation_path(tso) %></td>
+      <td><%= link_to 'Edit', edit_trail_site_observation_path(tso) %></td>
+      <td><%= link_to 'Destroy', trail_site_observation_path(tso),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
