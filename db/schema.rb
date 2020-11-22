@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+# /db/schema.rb
 ActiveRecord::Schema.define(version: 2020_11_19_015121) do
-
   create_table "facilities", force: :cascade do |t|
     t.integer "name_type"
     t.text "description"

@@ -1,4 +1,6 @@
 
+#/app/model/observation.rb
+
 class Observation < ApplicationRecord
     belongs_to :loggable, polymorphic: true
 
