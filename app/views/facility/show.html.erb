@@ -1,0 +1,21 @@
+SHOW Facility Observation notes
+
+<h2>Show Facility: <%= @facility.name_type %></h2>
+
+<p>
+  <strong>id:</strong>
+  <%= @facility.id %>
+</p>
+
+<p>
+  <strong>name:</strong>
+  <%= @facility.name_type %>
+</p>
+
+<p>
+  <strong>name:</strong>
+  <%= @facility.description %>
+</p>
+
+<%= render partial: "observations/observation_notes", locals: {loggable: @facility}%>
+<%= render partial: "observations/form", locals: {loggable: @facility}%>
