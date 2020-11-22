@@ -1,27 +1,35 @@
-<h1>TrailSites#index</h1>
- 
-<table>
+<h2>Index of TrailSites</h2>
+<div class="table-responsive">
+<table  class="table table-striped table-bordered table-hover">
+<thead class="thead-dark">
   <tr>
-    <th>ID</th>
-    <th>Is trail head?</th>
-    <th>Section number</th>
-    <th>Distance from trail start</th>
-    <th colspan="4"></th>
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Is trail head?</th>
+    <th scope="col">Section number</th>
+    <th scope="col">Distance from trail start</th>
+    <th scope="col">xxx</th>
+        <th scope="col">xxx</th>
+    <th scope="col">xxx</th>
+
   </tr>
+  </thead>
  
   <% @trail_sites.each do |trail_site| %>
     <tr>
       <td><%= trail_site.id %></td>
+      <td><%= trail_site.name %></td>
       <td><%= trail_site.is_trail_head %></td>
       <td><%= trail_site.section_number %></td>
       </td>
       <td><%= trail_site.distance_from_trail_start %></td>
       <td><%= link_to 'Show', trail_site_path(trail_site) %></td>
       <td><%= link_to 'Edit', edit_trail_site_path(trail_site) %></td>
-      <td><%= link_to 'Destroy', trail_sites_path(trail_site),
+      <td><%= link_to 'Destroy', trail_site_path(trail_site),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
+</div>
 

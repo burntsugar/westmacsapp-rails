@@ -1,7 +1,6 @@
-
+#/app/model/trail_site.rb
 class TrailSite < ApplicationRecord
     has_many :observations, as: :loggable
-
 
     # is_trail_head : boolean
     validates_inclusion_of :is_trail_head, presence: true, in: [true, false]

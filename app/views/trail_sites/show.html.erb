@@ -1,59 +1,42 @@
-<h1>TrailSite#show</h1>
-
+<!-- /app/views/trail_sites/show.html.erb-->
+<h2>Show TrailSite: <%= @trail_site.name %></h2>
 <p>
-  <strong>Title:</strong>
-  <%= @trail_site.id %>
+   <strong>id:</strong>
+   <%= @trail_site.id %>
 </p>
- 
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.is_trail_head %>
+   <strong>Name:</strong>
+   <%= @trail_site.name %>
 </p>
- 
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.section_number %>
+   <strong>Is trail head?:</strong>
+   <%= @trail_site.is_trail_head %>
 </p>
-
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.distance_from_trail_start %>
+   <strong>Section number:</strong>
+   <%= @trail_site.section_number %>
 </p>
-
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.name %>
+   <strong>Distance from trail start:</strong>
+   <%= @trail_site.distance_from_trail_start %>
 </p>
-
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.description %>
+   <strong>Description:</strong>
+   <%= @trail_site.description %>
 </p>
-
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.latitude %>
+   <strong>Latitude:</strong>
+   <%= @trail_site.latitude %>
 </p>
-
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.longitude %>
+   <strong>Longitude:</strong>
+   <%= @trail_site.longitude %>
 </p>
-
 <p>
-  <strong>Text:</strong>
-  <%= @trail_site.elevation %>
+   <strong>Elevation:</strong>
+   <%= @trail_site.elevation %>
 </p>
-
-<h2>Observations</h2>
-<%= render @trail_site.observations %>
-
-<h2>Add an observation:</h2>
-<%= render 'observations/form' %>
-
- 
+<%= render partial: "observations/observation_notes", locals: {loggable: @trail_site, trail_site_id: @trail_site.id}%>
+<%= render partial: "observations/form", locals: {loggable: @trail_site}%>
 <%= link_to 'Edit', edit_trail_site_path(@trail_site) %> |
 <%= link_to 'Back', trail_sites_path %>
-
-
- 

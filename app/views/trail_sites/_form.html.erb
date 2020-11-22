@@ -1,66 +1,62 @@
-<%= form_with scope: :trail_site, url: trail_sites_path, local: true do |form| %>
- 
-    <% if @trail_site.errors.any? %>
-      <div id="error_explanation">
-        <h2>
-          <%= pluralize(@trail_site.errors.count, "error") %> prohibited
-          this trail_site from being saved:
-        </h2>
-        <ul>
-          <% @trail_site.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-        </ul>
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-lg-6">
+         <div class="form-group">
+            <%= form_with scope: :trail_site, url: trail_sites_path, local: true do |form| %>
+            <% if @trail_site.errors.any? %>
+            <div id="error_explanation">
+               <h2>
+                  <%= pluralize(@trail_site.errors.count, "error") %> prohibited
+                  this trail_site from being saved:
+               </h2>
+               <ul>
+                  <% @trail_site.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+                  <% end %>
+               </ul>
+            </div>
+            <% end %>
+            <p>
+               <%= form.label :id %><br>
+               <%= form.text_field :id, readonly: true, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :name %><br>
+               <%= form.text_area :name, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :is_trail_head %><br>
+               <%= form.text_area :is_trail_head, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :section_number %><br>
+               <%= form.text_area :section_number, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :distance_from_trail_start %><br>
+               <%= form.text_area :distance_from_trail_start, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :description %><br>
+               <%= form.text_area :description, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :latitude %><br>
+               <%= form.text_area :latitude, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :longitude %><br>
+               <%= form.text_area :longitude, class:"form-control" %>
+            </p>
+            <p>
+               <%= form.label :elevation %><br>
+               <%= form.text_area :elevation  %>
+            </p>
+            <p>
+               <%= form.submit "Update", class: "btn btn-primary" %> <%=link_to "Cancel", :back, class: "btn btn-primary"%>
+            </p>
+            <% end %>
+         </div>
       </div>
-    <% end %>
-   
-    <p>
-      <%= form.label :id %><br>
-      <%= form.text_field :id, readonly: true %>
-    </p>
-   
-    <p>
-      <%= form.label :is_trail_head %><br>
-      <%= form.text_area :is_trail_head %>
-    </p>
-
-    <p>
-        <%= form.label :section_number %><br>
-        <%= form.text_area :section_number %>
-    </p>
-
-    <p>
-        <%= form.label :distance_from_trail_start %><br>
-        <%= form.text_area :distance_from_trail_start %>
-    </p>
-
-    <p>
-        <%= form.label :name %><br>
-        <%= form.text_area :name %>
-    </p>
-
-    <p>
-        <%= form.label :description %><br>
-        <%= form.text_area :description %>
-    </p>
-
-    <p>
-        <%= form.label :latitude %><br>
-        <%= form.text_area :latitude %>
-    </p>
-
-    <p>
-        <%= form.label :longitude %><br>
-        <%= form.text_area :longitude %>
-    </p>
-
-    <p>
-        <%= form.label :elevation %><br>
-        <%= form.text_area :elevation %>
-    </p>
-   
-    <p>
-      <%= form.submit %>
-    </p>
-   
-  <% end %>
+   </div>
+</div>
