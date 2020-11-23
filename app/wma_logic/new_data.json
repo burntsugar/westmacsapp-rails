@@ -1,0 +1,700 @@
+{
+    "trailsites": [
+        {
+            "is_trail_head": true,
+            "section_number": 1,
+            "name": "Telegraph Station",
+            "distance_from_trail_start": 0,
+            "other_names": [],
+            "description": "The official eastern start point for the Larapinta Trail is on the grounds of the historic Telegraph Station.",
+            "latitude": -23.67084996,
+            "longitude": 133.88502742,
+            "coords": [-23.67084996,133.88502742],
+            "elevation": 592,
+            "observations": [
+                {
+                    "author_name":"rrr@burntsugar.rocks",
+                    "note": "We had trouble finding the trailhead - ended up walking around in circles for a while before commencing our 230KM trek!",
+                    "log_date": "2019-07-11T07:00:00"
+                }
+            ],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 8,
+            "name": "Serpentine Gorge Car Park",
+            "distance_from_trail_start": 139.3,
+            "other_names": [],
+            "description": "Serpentine Gorge Car Park is less than a KM south from Serpentine Gorge Campsite. Very bumpy 4WD track connects the carpark to Namatjira Drive",
+            "latitude": -23.7593162,
+            "longitude": 132.9794325,
+            "coords": [-23.7593162,132.9794325],
+            "elevation": 733,
+            "observations": [
+                {
+                    "author_name":"rrr@burntsugar.rocks",
+                    "note": "Very busy, many tour groups visiting the gorge.",
+                    "log_date": "2019-07-20T07:30:00"
+                }
+            ],
+            "facilities": [
+                {
+                    "facility_name": "Parking Area",
+                    "facility_description": "Parking available",
+                    "facility-observations": []
+                }
+            ]
+        }
+    ],
+    "campsites": [
+        {
+            "is_trail_head": false,
+            "section_number": 1,
+            "name": "Wallaby Gap Campsite",
+            "distance_from_trail_start": 13.5,
+            "other_names": [],
+            "description": "...Wallaby Gap Campsite...",
+             "latitude": -23.668264,
+            "longitude": 133.79529,
+            "coords": [
+                -23.668264,
+                133.79529
+            ],
+            "elevation":"",
+            "observations": [
+                {
+                    "author_name":"rrr@burntsugar.rocks",
+                    "note": "Easy night with a few dingos closeby. The log book indicated there had been a lot of dingo activity recently.",
+                    "log_date": "2019-07-20T17:30:00"
+                }
+        ],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": [
+                        {
+                            "author_name":"rrr@burntsugar.rocks",
+                            "note": "There was even a fresh stock of toilet paper!.",
+                            "log_date": "2019-07-20T17:30:00"
+                        },
+                        {
+                            "author_name":"rrr@burntsugar.rocks",
+                            "note": "Don't look down with your headlamp on!.",
+                            "log_date": "2019-07-20T20:30:00"
+                        }
+                    ]
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "USB charging station",
+                    "facility_description": "USB charging available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 2,
+            "name": "Simpson's Gap",
+            "distance_from_trail_start": 23.9,
+            "other_names": [],
+            "description": "One of the best know attractions on the trail which attracts many visitors by road and foot.",
+            "latitude": -23.680294,
+            "longitude": 133.717604,
+            "coords": [
+                -23.680294,
+                133.717604
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 2,
+            "name": "Mulga Camp",
+            "distance_from_trail_start": 37.5,
+            "other_names": [],
+            "description": "Located just off the trail and atop a rise. Large area with many tent pads.",
+            "latitude": -23.66473,
+            "longitude": 133.61289,
+            "coords": [
+                -23.66473,
+                133.61289
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 3,
+            "name": "Jay Creek",
+            "distance_from_trail_start": 48.3,
+            "other_names": [],
+            "description": "...Jay Creek...",
+            "latitude": "",
+            "longitude": "",
+            "coords": [],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "USB charging station",
+                    "facility_description": "USB charging available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 3,
+            "name": "Millers Flat Campsite",
+            "distance_from_trail_start": 57.6,
+            "other_names": [],
+            "description": "...Millers Flat Campsite...",
+            "latitude": -23.69372,
+            "longitude": 133.49314,
+            "coords": [
+                -23.69372,
+                133.49314
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 4,
+            "name": "Standley Chasm",
+            "distance_from_trail_start": 62.4,
+            "other_names": [],
+            "description": "Camping fees apply here. Another of the larger attractions.",
+            "latitude": -23.724909,
+            "longitude": 133.46922,
+            "coords": [
+                -23.724909,
+                133.46922
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tap water",
+                    "facility_description": "Water available from taps.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shower",
+                    "facility_description": "Shower available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 4,
+            "name": "Brinkley Bluff Campsite",
+            "distance_from_trail_start": 72.4,
+            "other_names": [],
+            "description": "Dry camp. There are a number of campsites atop Brinkley, facing north and south. Recommended camp, weather/wind permitting.",
+            "latitude": -23.7107,
+            "longitude": 133.39205,
+            "coords": [
+                -23.7107,
+                133.39205
+            ],
+            "elevation": 1197,
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 4,
+            "name": "Stuarts Pass Campsite",
+            "distance_from_trail_start": 75.4,
+            "other_names": [],
+            "description": "Dry camp. A nice spot with trees and shade.",
+            "latitude": -23.7132,
+            "longitude": 133.3771,
+            "coords": [
+                -23.7132,
+                133.3771
+            ],
+            "elevation": 712,
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 5,
+            "name": "Section 4/5 junction",
+            "distance_from_trail_start": 79.2,
+            "other_names": [],
+            "description": "...Section 4/5 junction...",
+            "latitude": -23.719362,
+            "longitude": 133.347333,
+            "coords": [
+                -23.719362,
+                133.347333
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "USB charging station",
+                    "facility_description": "USB charging available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 5,
+            "name": "Fringe Lilly Creek Campsite",
+            "distance_from_trail_start": 87.0,
+            "other_names": [],
+            "description": "Dry camping in or along the river bed.",
+            "latitude": -23.69102,
+            "longitude": 133.30042,
+            "coords": [
+                -23.69102,
+                133.30042
+            ],
+            "elevation": 793,
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 6,
+            "name": "Hugh Gorge Campsite",
+            "distance_from_trail_start": 94.3,
+            "other_names": [],
+            "description": "...Located at the mouth of Hugh Gorge as it opens onto the Alice Valley....",
+            "latitude": -23.701831,
+            "longitude": 133.259303,
+            "coords": [
+                -23.701831,
+                133.259303
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "USB charging station",
+                    "facility_description": "USB charging available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 6,
+            "name": "Ghost Gum Flat Campsite",
+            "distance_from_trail_start": 101.5,
+            "other_names": [],
+            "description": "Dry camping, peaceful, not much else.",
+            "latitude": -23.72079,
+            "longitude": 133.2404,
+            "coords": [
+                -23.72079,
+                133.2404
+            ],
+            "elevation": 753,
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 6,
+            "name": "Rocky Gully Campsite",
+            "distance_from_trail_start": 110.20,
+            "other_names": [],
+            "description": "Not much to see here. Consider filling up with water and moving on. Ghost Gum Flat is back to the East and lovely but there are no facilities.",
+            "latitude": -23.75889,
+            "longitude": 133.16809,
+            "coords": [
+                -23.75889,
+                133.16809
+            ],
+            "elevation": 757,
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 7,
+            "name": "Ellery Creek Campsite",
+            "distance_from_trail_start": 125.5,
+            "other_names": [],
+            "description": "Large, busy campsite after coming of the Alice Valley.",
+            "latitude": -23.779522,
+            "longitude": 133.073059,
+            "coords": [
+                -23.779522,
+                133.073059
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 8,
+            "name": "Serpentine Gorge Campsite",
+            "distance_from_trail_start": 141.2,
+            "other_names": [],
+            "description": "Lovely little oasis.",
+            "latitude": -23.759522,
+            "longitude": 132.978983,
+            "coords": [
+                -23.759522,
+                132.978983
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "USB charging station",
+                    "facility_description": "USB charging available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 9,
+            "name": "Serpentine Chalet Dam Campsite",
+            "distance_from_trail_start": 152.7,
+            "other_names": [],
+            "description": "Last stop before the big dry stretch.",
+            "latitude": -23.727294,
+            "longitude": 132.909986,
+            "coords": [
+                -23.727294,
+                132.909986
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "USB charging station",
+                    "facility_description": "USB charging available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 9,
+            "name": "Waterfall Gorge Campsite",
+            "distance_from_trail_start": 165.7,
+            "other_names": [],
+            "description": "Dry camp. Big zig-zag out to the west! Start early! Another small campsite 10 mins north.",
+            "latitude": -23.68719,
+            "longitude": 132.82523,
+            "coords": [
+                -23.68719,
+                132.82523
+            ],
+            "elevation": 866,
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 10,
+            "name": "Ormiston Gorge Campsite",
+            "distance_from_trail_start": 181.3,
+            "other_names": [],
+            "description": "Busy campsite. Food drop location.",
+            "latitude": -23.632155,
+            "longitude": 132.726588,
+            "coords": [
+                -23.632155,
+                132.726588
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shelter",
+                    "facility_description": "Shelter available.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Shower",
+                    "facility_description": "Shower available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 11,
+            "name": "Finke River Campsite",
+            "distance_from_trail_start": 190.4,
+            "other_names": [],
+            "description": "This is where the Finke River begins.",
+            "latitude": -23.659285,
+            "longitude": 132.678387,
+            "coords": [
+                -23.659285,
+                132.678387
+            ],
+            "elevation":"",
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 11,
+            "name": "Davenport Creek Campsite",
+            "distance_from_trail_start": 194.8,
+            "other_names": [],
+            "description": "A few tent pads around a semi-permanent waterhole.",
+            "latitude": "",
+            "longitude": "",
+            "coords": [],
+            "elevation":"",
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 11,
+            "name": "Hilltop Lookout Campsite",
+            "distance_from_trail_start": 199.5,
+            "other_names": [],
+            "description": "Camp high with views across to Mt. Sonder.",
+            "latitude": "",
+            "longitude": "",
+            "coords": [],
+            "elevation": 1010,
+            "observations": [],
+            "facilities": []
+        },
+        {
+            "is_trail_head": false,
+            "section_number": 11,
+            "name": "Rocky Bar Gap Campsite",
+            "distance_from_trail_start": 204.6,
+            "other_names": [],
+            "description": "...Rocky Bar Gap...",
+            "latitude": "",
+            "longitude": "",
+            "coords": [],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                }
+            ]
+        },
+        {
+            "is_trail_head": true,
+            "section_number": 12,
+            "name": "Redbank Gorge Campsite",
+            "distance_from_trail_start": 215.90,
+            "other_names": [],
+            "description": "...Redbank Gorge Campsite...",
+            "latitude": "",
+            "longitude": "",
+            "coords": [],
+            "elevation":"",
+            "observations": [],
+            "facilities": [
+                {
+                    "facility_name": "Tank water",
+                    "facility_description": "Tank water available. All tank water should be treated prior to drinking.",
+                    "facility-observations": []
+                },
+                {
+                    "facility_name": "Toilet",
+                    "facility_description": "Toilet available.",
+                    "facility-observations": []
+                }
+            ]
+        }
+    ]
+}
