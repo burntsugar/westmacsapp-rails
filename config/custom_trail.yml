@@ -1,12 +1,12 @@
 shared:
    num_of_sections: 12
    max_distance_from_trail_start: 235
-   bbox_max_lat: -23.30
-   bbox_min_lat: -23.50
-   bbox_min_lng: 132.30
-   bbox_max_lng: 133.54
+   bbox_max_lat: -22.00
+   bbox_min_lat: -24.00
+   bbox_min_lng: 131.00
+   bbox_max_lng: 134.00
    min_elevation: 500.0
-   max_elevation: 1380.0
+   max_elevation: 2000.0
    # max_lat_north: -23.30
    # max_lat_south: -23.50
    # max_lng_west: 132.30
