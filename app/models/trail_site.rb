@@ -17,7 +17,7 @@ class TrailSite < ApplicationRecord
     # longitude
     validates :longitude, numericality: { only_float: true, allow_nil: true, less_than_or_equal_to: Rails.configuration.custom_trail.bbox_max_lng, greater_than_or_equal_to: Rails.configuration.custom_trail.bbox_min_lng}
     # elevation
-    validates :elevation, numericality: { :greater_than_or_equal_to => Rails.configuration.custom_trail.min_elevation, :less_than_or_equal_to => Rails.configuration.custom_trail.max_elevation, allow_nil: true }
+    validates :elevation, numericality: { only_float: true, allow_nil: true, :greater_than_or_equal_to => Rails.configuration.custom_trail.min_elevation, :less_than_or_equal_to => Rails.configuration.custom_trail.max_elevation }
 
     after_validation :log_errors, :if => Proc.new {|m| m.errors}
 
@@ -29,11 +29,8 @@ class TrailSite < ApplicationRecord
   
     private
     def init
-        if self.new_record? && self.elevation.nil?
-            self.elevation = 0
-        end
-        # TODO: is_trail_head false
-        # TODO: latitude 0
-        # TODO: longitude 0
+        # if self.new_record? && self.elevation.nil?
+        #     self.elevation = 0
+        # end
     end
 end
