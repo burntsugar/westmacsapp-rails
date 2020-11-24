@@ -12,9 +12,10 @@ class ObservationsController < ApplicationController
   end
 
   def create
-     @observation = @loggable.observations.new(observation_params)
-     @observation.save
-     redirect_to @loggable
+    log_date_params = {log_date: Time.now}
+    @observation = @loggable.observations.new(observation_params.merge(log_date_params))
+    @observation.save
+    redirect_to @loggable
   end
 
   def edit
@@ -43,6 +44,6 @@ class ObservationsController < ApplicationController
   private
 
   def observation_params
-      params.require(:observation).permit(:author_name, :note, :trail_site_id, :id)
+      params.require(:observation).permit(:author_name, :note, :trail_site_id, :id, :log_date)
   end
 end
