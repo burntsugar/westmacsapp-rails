@@ -21,9 +21,15 @@ config.custom_trail = config_for(:custom_trail)
 shared:
    num_of_sections: 12
    max_distance_from_trail_start: 235
+   bbox_max_lat: -22.00
+   bbox_min_lat: -24.00
+   bbox_min_lng: 131.00
+   bbox_max_lng: 134.00
+   min_elevation: 500.0
+   max_elevation: 2000.0
 ````
 
-## Run all tests
+## Tests
 
 `bundle exec rspec`
 
