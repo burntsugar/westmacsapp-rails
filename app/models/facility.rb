@@ -1,4 +1,3 @@
-
 #/app/model/facility.rb
 
 class Facility < ApplicationRecord

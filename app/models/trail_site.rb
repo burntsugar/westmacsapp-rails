@@ -1,4 +1,5 @@
 #/app/model/trail_site.rb
+
 class TrailSite < ApplicationRecord
     has_many :observations, as: :loggable
 

@@ -1,4 +1,5 @@
 # /app/controllers/trail_sites_controller.rb
+
 class TrailSitesController < ApplicationController
   def index
     @trail_sites = TrailSite.all

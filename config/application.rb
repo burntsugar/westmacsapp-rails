@@ -11,6 +11,7 @@ module WestmacsappRails
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    # Custom trail config
     config.custom_trail = config_for(:custom_trail)
 
 

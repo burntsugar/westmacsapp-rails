@@ -1,4 +1,5 @@
-# /app/controllers/facilities/ObservationsController.rb
+# /app/controllers/facilities/observations_controller.rb
+
 class Facilities::ObservationsController<ObservationsController
 before_action :set_loggable
 

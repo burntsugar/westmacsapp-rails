@@ -1,3 +1,5 @@
+# /app/controllers/facility_controller.rb
+
 class FacilityController < ApplicationController
   def index
     @facilities = Facility.all

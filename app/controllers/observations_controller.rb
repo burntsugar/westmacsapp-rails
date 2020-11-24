@@ -1,5 +1,5 @@
 
-# /app/controllers/ObservationsController.rb
+# /app/controllers/observations_controller.rb
 
 class ObservationsController < ApplicationController
 

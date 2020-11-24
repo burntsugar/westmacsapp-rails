@@ -1,4 +1,4 @@
-# /app/controllers/trail_sites/ObservationsController.rb
+# /app/controllers/trail_sites/observations_controller.rb
 
 class TrailSites::ObservationsController<ObservationsController
 before_action :set_loggable

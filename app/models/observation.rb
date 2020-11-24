@@ -1,4 +1,3 @@
-
 #/app/model/observation.rb
 
 class Observation < ApplicationRecord
