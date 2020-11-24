@@ -54,6 +54,11 @@ RSpec.describe TrailSite, :type => :model do
     trail_site = TrailSite.new(@h_master)
     expect(trail_site).to_not be_valid
   end
+  it "is not valid when a name is not given" do
+    @h_master[:name]=""
+    trail_site = TrailSite.new(@h_master)
+    expect(trail_site).to_not be_valid
+  end
   it "is not valid with a nill description" do
     @h_master[:description]=nil
     trail_site = TrailSite.new(@h_master)
