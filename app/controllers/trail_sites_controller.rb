@@ -9,7 +9,7 @@ class TrailSitesController < ApplicationController
     @trail_site = TrailSite.new
     @observations = @trail_site.observations.build
     format_optionals
-  end 
+  end
 
   def create
     @trail_site = TrailSite.new(trail_site_params)
@@ -34,18 +34,15 @@ class TrailSitesController < ApplicationController
     @trail_site = TrailSite.find(params[:id])
     @trail_site.destroy
     redirect_to trail_sites_path
-  end 
+  end
 
   private
 
   def format_optionals
-    if @trail_site.elevation == 0 || @trail_site.elevation == nil
-      @trail_site.elevation = ''
-    end
+    @trail_site.elevation = '' if @trail_site.elevation.zero? || @trail_site.elevation.nil?
   end
 
   def trail_site_params
-      params.require(:trail_site).permit(:is_trail_head,:section_number,:distance_from_trail_start, :name, :description, :latitude, :longitude, :elevation)
+    params.require(:trail_site).permit(:is_trail_head, :section_number, :distance_from_trail_start, :name, :description, :latitude, :longitude, :elevation)
   end
-
 end

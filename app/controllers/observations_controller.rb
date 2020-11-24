@@ -1,8 +1,6 @@
-
 # /app/controllers/observations_controller.rb
 
 class ObservationsController < ApplicationController
-
   def show
     @observation = @loggable.observations.find(params[:id])
   end
@@ -12,7 +10,7 @@ class ObservationsController < ApplicationController
   end
 
   def create
-    log_date_params = {log_date: Time.now}
+    log_date_params = { log_date: Time.zone.now }
     @observation = @loggable.observations.new(observation_params.merge(log_date_params))
     @observation.save
     redirect_to @loggable
@@ -44,6 +42,6 @@ class ObservationsController < ApplicationController
   private
 
   def observation_params
-      params.require(:observation).permit(:author_name, :note, :trail_site_id, :id, :log_date)
+    params.require(:observation).permit(:author_name, :note, :trail_site_id, :id, :log_date)
   end
 end
