@@ -3,9 +3,13 @@
 class Observation < ApplicationRecord
     belongs_to :loggable, polymorphic: true
 
-    # validates :author_name, presence: true,
-    #                 length: { minimum: 1 }
-    # validates :note, presence: true, length: {minimum: 1}
+    # author_name
+    validates :author_name, presence: true,
+                    length: { minimum: 1 }
+    # note
+    validates :note, presence: true, length: {minimum: 1}
+    # log_date
+    validates :log_date, presence: true
 
     after_validation :log_errors, :if => Proc.new {|m| m.errors}
 
