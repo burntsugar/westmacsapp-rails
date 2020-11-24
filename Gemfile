@@ -60,3 +60,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'prettier'
 gem 'json'
+gem 'rubocop-rails', require: false
