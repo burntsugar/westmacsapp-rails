@@ -1,42 +1,24 @@
 <!-- /app/views/trail_sites/show.html.erb-->
-<h2>Show TrailSite: <%= @trail_site.name %></h2>
-<p>
-   <strong>id:</strong>
-   <%= @trail_site.id %>
-</p>
-<p>
-   <strong>Name:</strong>
-   <%= @trail_site.name %>
-</p>
-<p>
-   <strong>Is trail head?:</strong>
-   <%= @trail_site.is_trail_head %>
-</p>
-<p>
-   <strong>Section number:</strong>
-   <%= @trail_site.section_number %>
-</p>
-<p>
-   <strong>Distance from trail start:</strong>
-   <%= @trail_site.distance_from_trail_start %>
-</p>
-<p>
-   <strong>Description:</strong>
-   <%= @trail_site.description %>
-</p>
-<p>
-   <strong>Latitude:</strong>
-   <%= @trail_site.latitude %>
-</p>
-<p>
-   <strong>Longitude:</strong>
-   <%= @trail_site.longitude %>
-</p>
-<p>
-   <strong>Elevation:</strong>
-   <%= @trail_site.elevation %>
-</p>
+<h2><%= @trail_site.name %></h2>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">ID: <%=@trail_site.id%></p>
+        <p class="card-text">Section: <%= @trail_site.section_number %></p>
+        <p class="card-text">Distance East: <%= @trail_site.distance_from_trail_start %></p>
+        <p class="card-text">Description: <%= @trail_site.description %></p>
+        <p class="card-text">Latitude: <%= @trail_site.latitude %></p>
+        <p class="card-text">Longitude: <%= @trail_site.longitude %></p>
+        <p class="card-text">Elevation: <%= @trail_site.elevation %></p>
+        <%= link_to 'Edit', edit_trail_site_path(@trail_site.id),class:"card-link" %>
+        <%=link_to "Back", :back, class: "card-link"%>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
 <%= render partial: "observations/observation_notes", locals: {loggable: @trail_site, trail_site_id: @trail_site.id}%>
 <%= render partial: "observations/form", locals: {loggable: @trail_site}%>
-<%= link_to 'Edit', edit_trail_site_path(@trail_site) %> |
-<%= link_to 'Back', trail_sites_path %>
+
+  </div>
+</div>

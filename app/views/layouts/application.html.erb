@@ -9,13 +9,30 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> -->
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+        #wma-banner {
+          margin-bottom:30px;
+        }
+        #wma-banner h1 {
+          font-size: 4em;
+        }
+        .wma-tick-big {
+          font-size: 1em;
+          font-weight: bold; 
+          text-align: center;
+        }
+    </style>
   </head>
 
   <body>
   <div class="container-fluid">
-  <div id="wma-banner"><h1>WestMacsApp on Rails V<h1></div>
+  <header>
+  <div id="wma-banner"><h1>&#8249; WestMacsApp on Rails V &#8250;<h1></div>
+  </header>
     <%= yield %>
-    <div id="wma-footer"><%= link_to "Home", root_path %></div>
+    <div id="wma-footer">
+    <%= link_to "Home", root_path %>
+    rrr@burntsugar.rocks</div>
     </div>
     
   </body>

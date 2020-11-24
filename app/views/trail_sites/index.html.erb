@@ -5,12 +5,12 @@
   <tr>
     <th scope="col">ID</th>
     <th scope="col">Name</th>
-    <th scope="col">Is trail head?</th>
+    <th scope="col">Trail head</th>
     <th scope="col">Section number</th>
     <th scope="col">Distance from trail start</th>
-    <th scope="col">xxx</th>
-        <th scope="col">xxx</th>
-    <th scope="col">xxx</th>
+    <th scope="col"></th>
+        <th scope="col"></th>
+    <th scope="col"></th>
 
   </tr>
   </thead>
@@ -19,7 +19,12 @@
     <tr>
       <td><%= trail_site.id %></td>
       <td><%= trail_site.name %></td>
-      <td><%= trail_site.is_trail_head %></td>
+      <% if trail_site.is_trail_head %>
+        <td class="wma-tick-big">&#10003;</td>
+      <%else%>
+        <td><%= "" %></td>
+      <%end%>
+      
       <td><%= trail_site.section_number %></td>
       </td>
       <td><%= trail_site.distance_from_trail_start %></td>
