@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_19_015121) do
+ActiveRecord::Schema.define(version: 2020_11_24_031325) do
 
   create_table "facilities", force: :cascade do |t|
     t.integer "name_type"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_11_19_015121) do
     t.decimal "latitude", precision: 10, scale: 6, default: "0.0"
     t.decimal "longitude", precision: 10, scale: 6, default: "0.0"
     t.decimal "elevation", precision: 6, scale: 2, default: "0.0"
+    t.index ["name"], name: "index_trail_sites_on_name", unique: true
   end
 
 end
