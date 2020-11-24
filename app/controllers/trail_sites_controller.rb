@@ -2,7 +2,7 @@
 
 class TrailSitesController < ApplicationController
   def index
-    @trail_sites = TrailSite.all
+    @trail_sites = TrailSite.all.order(distance_from_trail_start: :asc)
   end
 
   def new
